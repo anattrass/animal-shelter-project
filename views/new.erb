@@ -11,22 +11,5 @@
         <input type="text" name="last_name"/>
     </label>
 
-    <label>
-        <span>Age:</span>
-        <input type="number" name="age"/>
-    </label>
-
-    <label>
-        <span>House:</span>
-        <select name="house_id">
-           <% for house in @houses %>
-           <option value="<%= house.id %>">
-             <%= house.name %>
-            </option>
-        
-           <% end %>
-        </select>
-    </label>
-
-    <input type="submit" value="Enroll">
+    <input type="submit" value="Admit">
 </form>
