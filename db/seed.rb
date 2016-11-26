@@ -1,6 +1,5 @@
 require_relative('../models/musician.rb')
 require_relative('../models/band.rb')
-require('pry-byebug')
 
 band1 = Band.new({
     'name' => 'Slipknot'
@@ -49,7 +48,3 @@ musician3.save()
 
 musicians = Musician.all()
 bands = Band.all()
-
-
-binding.pry
-nil

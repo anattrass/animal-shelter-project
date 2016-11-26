@@ -8,30 +8,29 @@ get '/musicians' do
     erb(:index)
 end
 
-
-# get '/students' do
-#     @students = Student.all()
-#     erb(:index)
-# end
-
-# get '/students/new' do
-#     @houses = House.all()
+# get '/musicians/new' do
+#     @bands = Band.all()
 #     erb(:new)
 # end
 
-# post '/students' do
-#     student = Student.new( params )
-#     student.save()
-#     redirect to '/students'
+# post '/musicians' do
+#     musician = Musician.new( params )
+#     musician.save()
+#     redirect to '/musicians'
 # end
 
-# get '/students/:id' do
-#     @student = Student.find_by_id( params['id'] )
+# get '/musicians/:id' do
+#     @musician = Musician.find_by_id( params['id'] )
 #     erb(:show) 
 # end
 
-# get '/students/house/:house_id' do
-#     @students = Student.find_by_house( params['house_id'])
-#     @house = House.find_by_id( params['house_id'] )
-#     erb(:house)
+# get '/musicians/band/:band_id' do
+#     @musicians = Musician.find_by_band( params['band_id'])
+#     @band = Band.find_by_id( params['band_id'] )
+#     erb(:band)
+# end
+
+# get '/bands' do
+#     @bands = Band.all()
+#     erb(:band)
 # end
