@@ -23,11 +23,11 @@ class Band
        return result
    end
 
-   # def self.find_by_id( id )
-   #     sql = "SELECT * FROM bands WHERE id=#{id}"
-   #     band = SqlRunner.run(sql)
-   #     result = Band.new( band.first )
-   #     return result
-   # end
+   def self.find_by_id( id )
+       sql = "SELECT * FROM bands WHERE id=#{id}"
+       band = SqlRunner.run(sql)
+       result = Band.new( band.first )
+       return result
+   end
 
 end
