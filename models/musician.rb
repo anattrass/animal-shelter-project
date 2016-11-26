@@ -23,9 +23,9 @@ class Musician
         @id = result[0]['id'].to_i
     end
 
-    # def band()
-    #     return Band.find_by_id(@band_id)
-    # end
+    def band()
+        return Band.find_by_id(@band_id)
+    end
 
     def self.all()
         sql = "SELECT * FROM musicians;"
