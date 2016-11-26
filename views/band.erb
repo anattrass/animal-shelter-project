@@ -1,0 +1,9 @@
+<h1>Band <%= @band.name %></h1>
+
+<% for musician in @musicians %>
+    <p>Name: <%= musician.name() %> </p>
+    <p>Band: <%= musician.band.name %> </p>
+    <p>Instrument: <%= musician.instrument %></p>
+    <p>Days in Rehab: <%= musician.days_here %></p>
+    <hr>
+<% end %>

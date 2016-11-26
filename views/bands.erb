@@ -1,0 +1,7 @@
+<h1>Adopting Bands</h1>
+
+<% for band in @bands %>
+    <p>Name: <%= band.name() %> </p>
+    <a href="/musicians/band/<%= band.id %>">Show musicians</a>
+    <hr>
+<% end %>

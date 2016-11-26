@@ -7,9 +7,9 @@ class Musician
     def initialize( options )
         @name = options['name']
         @instrument = options['instrument']
-        @days_here = options['days_here'].to_i if options['days_here']
+        @days_here = options['days_here'].to_i
         @id = options['id'].to_i if options['id']
-        @band_id = options['band_id'].to_i if options['band_id']
+        @band_id = options['band_id'].to_i
     end
 
 
@@ -47,6 +47,11 @@ class Musician
         musicians = SqlRunner.run(sql)
         result = musicians.map { |musician| Musician.new (musician) }
         return result
+    end
+
+    def self.destroy( id )
+      sql = "DELETE FROM pizzas WHERE id=#{id}"
+      SqlRunner.run( sql )
     end
 
 end

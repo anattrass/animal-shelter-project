@@ -1,0 +1,13 @@
+<h1>Show a Musician</h1>
+
+<p>Name: <%= @musician.name %></p>
+<p>Instrument: <%= @musician.instrument %></p>
+<p>Days in Rehab: <%= @musician.days_here %></p>
+<p>Band: <%= @musician.band.name %></p>
+
+
+<p><a href="/musicians/<%= @musician.id %>/edit">Edit</a></p>
+
+<form action="/musicians/<%= @musician.id %>/delete" method="post">
+    <input type="submit" value="delete" />
+</form>

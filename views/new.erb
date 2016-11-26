@@ -11,5 +11,22 @@
         <input type="text" name="last_name"/>
     </label>
 
+    <label>
+        <span>Days in Rehab:</span>
+        <input type="number" name="Days Spent in Rehab"/>
+    </label>
+
+    <label>
+        <span>Band:</span>
+        <select name="band_id">
+           <% for band in @bands %>
+           <option value="<%= band.id %>">
+             <%= band.name %>
+            </option>
+        
+           <% end %>
+        </select>
+    </label>
+
     <input type="submit" value="Admit">
 </form>
