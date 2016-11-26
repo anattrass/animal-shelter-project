@@ -7,9 +7,9 @@ class Musician
     def initialize( options )
         @name = options['name']
         @instrument = options['instrument']
-        @days_here = options['days_here'].to_i
+        @days_here = nil || options['days_here'].to_i
         @id = options['id'].to_i if options['id']
-        @band_id = options['band_id'].to_i
+        @band_id = nil || options['band_id'].to_i
     end
 
 
@@ -18,7 +18,7 @@ class Musician
         (name, instrument, days_here, band_id)
         VALUES
         ('#{@name}', '#{@instrument}', #{@days_here}, #{@band_id})
-        returning * ;"
+        returning *;"
         result = SqlRunner.run(sql)
         @id = result[0]['id'].to_i
     end
@@ -35,7 +35,7 @@ class Musician
     end
 
     def self.find_by_id( id )
-        sql = "SELECT * FROM musicians WHERE id=#{id}"
+        sql = "SELECT * FROM musicians WHERE id=#{id};"
         musician = SqlRunner.run(sql)
         result = Musician.new( musician.first )
         return result
@@ -50,7 +50,7 @@ class Musician
     end
 
     def self.delete( id )
-      sql = "DELETE FROM musicians WHERE id=#{id}"
+      sql = "DELETE FROM musicians WHERE id=#{id};"
       SqlRunner.run( sql )
     end
 
