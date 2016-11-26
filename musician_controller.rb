@@ -8,10 +8,10 @@ get '/musicians' do
     erb(:index)
 end
 
-# get '/musicians/new' do
-#     @bands = Band.all()
-#     erb(:new)
-# end
+get '/musicians/new' do
+    @bands = Band.all()
+    erb(:new)
+end
 
 # post '/musicians' do
 #     musician = Musician.new( params )
