@@ -19,6 +19,10 @@ post '/musicians' do
     redirect to '/musicians'
 end
 
+post '/musicians/:id/delete' do
+  Musician.delete( params[:id] )
+end
+
 get '/musicians/:id' do
     @musician = Musician.find_by_id( params['id'] )
     erb(:show) 

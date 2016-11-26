@@ -49,8 +49,8 @@ class Musician
         return result
     end
 
-    def self.destroy( id )
-      sql = "DELETE FROM pizzas WHERE id=#{id}"
+    def self.delete( id )
+      sql = "DELETE FROM musicians WHERE id=#{id}"
       SqlRunner.run( sql )
     end
 
