@@ -41,12 +41,12 @@ class Musician
         return result
     end
 
-    # def self.find_by_band( band_id )
-    #     sql = "SELECT * FROM musicians
-    #     WHERE band_id = #{band_id};"
-    #     musicians = SqlRunner.run(sql)
-    #     result = musicians.map { |musician| Musician.new (musician) }
-    #     return result
-    # end
+    def self.find_by_band( band_id )
+        sql = "SELECT * FROM musicians
+        WHERE band_id = #{band_id};"
+        musicians = SqlRunner.run(sql)
+        result = musicians.map { |musician| Musician.new (musician) }
+        return result
+    end
 
 end
