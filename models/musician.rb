@@ -7,8 +7,8 @@ class Musician
     def initialize( options )
         @name = options['name']
         @instrument = options['instrument']
-        @days_here = nil || options['days_here'].to_i
-        @id = options['id'].to_i if options['id']
+        @days_here = 0 || options['days_here'].to_i
+        @id = nil || options['id'].to_i
         @band_id = nil || options['band_id'].to_i
     end
 
