@@ -13,11 +13,11 @@ get '/musicians/new' do
     erb(:new)
 end
 
-# post '/musicians' do
-#     musician = Musician.new( params )
-#     musician.save()
-#     redirect to '/musicians'
-# end
+post '/musicians' do
+    musician = Musician.new( params )
+    musician.save()
+    redirect to '/musicians'
+end
 
 # get '/musicians/:id' do
 #     @musician = Musician.find_by_id( params['id'] )
