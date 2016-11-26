@@ -25,7 +25,7 @@ class Musician
     end
 
     def self.all()
-        sql = "SELECT * FROM students;"
+        sql = "SELECT * FROM musicians;"
         musicians = SqlRunner.run(sql)
         result = musicians.map { |musician| Musician.new (musician) }
         return result

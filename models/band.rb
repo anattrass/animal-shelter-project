@@ -16,4 +16,11 @@ class Band
        @id = result.first()['id'].to_i
    end
 
+   def self.all()
+       sql = "SELECT * FROM bands;"
+       bands = SqlRunner.run(sql)
+       result = bands.map { |band| Band.new (band) }
+       return result
+   end
+
 end
