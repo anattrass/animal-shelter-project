@@ -24,4 +24,11 @@ class Musician
         @id = result[0]['id'].to_i
     end
 
+    def self.all()
+        sql = "SELECT * FROM students;"
+        musicians = SqlRunner.run(sql)
+        result = musicians.map { |musician| Musician.new (musician) }
+        return result
+    end
+
 end
