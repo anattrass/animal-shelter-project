@@ -6,7 +6,7 @@ class Musician
 
     def initialize( options )
         @name = options['name']
-        @instrument = options['instument']
+        @instrument = options['instrument']
         @days_here = options['days_here'].to_i
         @musician_pic_url = options['musician_pic_url']
         @id = options['id'].to_i
