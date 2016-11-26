@@ -34,14 +34,14 @@ class Musician
         return result
     end
 
-    # def self.find_by_id( id )
-    #     sql = "SELECT * FROM musicians WHERE id=#{id}"
-    #     musician = SqlRunner.run(sql)
-    #     result = Musician.new( musician.first )
-    #     return result
-    # end
+    def self.find_by_id( id )
+        sql = "SELECT * FROM musicians WHERE id=#{id}"
+        musician = SqlRunner.run(sql)
+        result = Musician.new( musician.first )
+        return result
+    end
 
-    # def self.find_by_house( band_id )
+    # def self.find_by_band( band_id )
     #     sql = "SELECT * FROM musicians
     #     WHERE band_id = #{band_id};"
     #     musicians = SqlRunner.run(sql)
