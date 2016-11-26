@@ -1,5 +1,5 @@
 require_relative('../db/sqlrunner')
-# require_relative('band')
+require_relative('band')
 
 class Musician 
     attr_reader :name, :instrument, :days_here, :musician_pic_url, :id
@@ -20,9 +20,7 @@ class Musician
         VALUES
         ('#{@name}', '#{@instrument}', #{@days_here}, '#{@musician_pic_url}', #{@band_id})
         returning * ;"
-
         result = SqlRunner.run(sql)
-
         @id = result[0]['id'].to_i
     end
 
