@@ -9,7 +9,6 @@ get '/musicians' do
 end
 
 get '/musicians/new' do
-    @bands = Band.all()
     erb(:new)
 end
 
