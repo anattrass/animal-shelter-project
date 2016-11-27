@@ -7,17 +7,22 @@ class Musician
     def initialize( options )
         @name = options['name']
         @instrument = options['instrument']
-        @days_here = 0 || options['days_here'].to_i
-        @id = nil || options['id'].to_i
-        @band_id = nil || options['band_id'].to_i
+        @days_here = options['days_here'].to_i if options['days_here']
+        @id = options['id'].to_i if options['id']
+        @band_id = options['band_id'].to_i if options['band_id']
     end
 
 
     def save()
+            band_id = "NULL"
+            band_id = "#{@band_id}" if @band_id
+
+            days_here = "NULL"
+            days_here = "'#{@days_here}'" if @days_here
         sql = "INSERT INTO musicians
         (name, instrument, days_here, band_id)
         VALUES
-        ('#{@name}', '#{@instrument}', #{@days_here}, #{@band_id})
+        ('#{@name}', '#{@instrument}', #{days_here}, #{band_id})
         returning *;"
         result = SqlRunner.run(sql)
         @id = result[0]['id'].to_i
