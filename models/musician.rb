@@ -12,7 +12,6 @@ class Musician
         @band_id = options['band_id'].to_i if options['band_id']
     end
 
-
     def save()
             band_id = "Null"
             band_id = "#{@band_id}" if @band_id

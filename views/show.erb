@@ -3,7 +3,7 @@
 <p>Name: <%= @musician.name %></p>
 <p>Instrument: <%= @musician.instrument %></p>
 <p>Days in Rehab: <%= @musician.days_here %></p>
-<p>Band: <%= @musician.band.name %></p>
+<p>Band: <%= "Null" || @musician.band.name %></p>
 
 <form action="/musicians/<%= @musician.id %>/collection" method="post">
     <input type="submit" value="Collect" />
