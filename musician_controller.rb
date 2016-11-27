@@ -19,6 +19,13 @@ post '/musicians' do
     redirect to '/musicians'
 end
 
+get '/musicians/:id/collection' do
+    @musician = Musician.find_by_id(params['id'].to_i)
+    @bands = Band.all()
+    erb(:collection)
+    redirect to '/musicians'
+end
+
 post '/musicians/:id/delete' do
   Musician.delete( params[:id] )
   redirect to '/musicians'

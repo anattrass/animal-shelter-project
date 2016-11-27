@@ -1,0 +1,17 @@
+<h1>Rehab Collection</h1>
+
+<form action="/musicians" method="post">
+    <label>
+        <span>Musician:</span> 
+        <input type="hidden" name="musician_id" value="<%= @musician.id %>"><%= @musician.name %>    
+    </label>
+    <label>
+        <span>Collecting Band:</span> 
+        <select name = "pet_id">
+            <% for band in @bands %>
+                <option  value="<%= band.id %>"><%= band.name %></option> 
+            <% end %>
+        </select>
+    </label>
+    <input type="submit" value="Collect">
+</form>

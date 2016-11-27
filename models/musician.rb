@@ -17,7 +17,7 @@ class Musician
             band_id = "NULL"
             band_id = "#{@band_id}" if @band_id
 
-            days_here = "NULL"
+            days_here = 0
             days_here = "'#{@days_here}'" if @days_here
         sql = "INSERT INTO musicians
         (name, instrument, days_here, band_id)
