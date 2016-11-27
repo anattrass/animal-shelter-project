@@ -14,7 +14,7 @@ class Musician
 
 
     def save()
-            band_id = "Nil"
+            band_id = "Null"
             band_id = "#{@band_id}" if @band_id
 
             days_here = 0
