@@ -5,9 +5,10 @@
 <p>Days in Rehab: <%= @musician.days_here %></p>
 <p>Band: <%= @musician.band.name %></p>
 
-
-<p><a href="/musicians/<%= @musician.id %>/edit">Edit</a></p>
+<form action="/musicians/<%= @musician.id %>/collection" method="post">
+    <input type="submit" value="Collect" />
+</form>
 
 <form action="/musicians/<%= @musician.id %>/delete" method="post">
-    <input type="submit" value="delete" />
+    <input type="submit" value="Delete" />
 </form>
