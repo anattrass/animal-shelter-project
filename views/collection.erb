@@ -13,6 +13,7 @@
     <label>
         Collecting Band:
         <select name = "band_id">
+        <option disabled selected>select..</option>
             <% for band in @bands %>
                 <option  value="<%= band.id %>"><%= band.name %></option> 
             <% end %>
