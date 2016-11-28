@@ -1,9 +1,9 @@
-<h1>Rehab Collection</h1>
+<h1>Rehab Collection: <%= @musician.name %></h1>
 
 <form action="/musicians/<%= @musician.id %>" method="post">
     <label>
         Musician:
-        <input type="text" name="name" value="<%= @musician.name %>"/> 
+        <input type="hidden" name="name" value="<%= @musician.name %>"/> 
     </label>
     <label>
         Instrument:
