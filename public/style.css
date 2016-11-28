@@ -1,0 +1,50 @@
+nav {
+  padding: 0px;
+  margin: 0px;
+  padding-right: 25px;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+body {
+  background-color: #DCDCDC;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: darkred;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  border-right: 1px solid darkred;
+  padding-left: 25px;
+
+.content {
+      display: inline-block;
+      width: 60%;
+      height: auto;
+  }
+
+
+
+
+
