@@ -28,6 +28,11 @@ class Musician
         @id = result[0]['id'].to_i
     end
 
+    def can_be_collected?
+          earliest_collection = 30
+          return @days_here >= earliest_collection
+      end
+
     def band()
         return Band.find_by_id(@band_id) if @band_id
     end
