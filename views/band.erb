@@ -7,3 +7,7 @@
     <p>Days in Rehab: <%= musician.days_here %></p>
     <hr>
 <% end %>
+
+<form action="/bands/<%= @band.id %>/delete" method="post">
+    <input type="submit" value="Delete Band!" />
+</form>
