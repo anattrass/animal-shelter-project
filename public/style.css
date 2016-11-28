@@ -19,23 +19,17 @@ nav ul {
     width: 60%;
 }
 
-
-.content {
-    display: inline-block;
-    width: 60%;
-    height: auto;
-}
-
 body {
   background-image: url(http://teezeria.com/images/designs/7200-7201img_47.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-color: #F0FFFF;
 }
 
 h1 {
   font-size: 1.8em;
-  color: darkred;
+  color: #1E90FF;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
