@@ -5,6 +5,8 @@
 <p>Days in Rehab: <%= @musician.days_here %></p>
 <p>Band: <%= @musician.band.name if @musician.band %></p>
 
+<% unless @musician.band_id %>
+
 <% if @musician.can_be_collected? %>
   <li>
     Ready for Collection:
@@ -19,6 +21,8 @@
   <li>
      Not fully cleansed!
   </li>
+  <% end %>
+
   <% end %>
 
 <form action="/musicians/<%= @musician.id %>/delete" method="post">
