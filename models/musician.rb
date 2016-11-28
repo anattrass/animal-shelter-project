@@ -29,7 +29,7 @@ class Musician
     end
 
     def band()
-        return Band.find_by_id(@band_id)
+        return Band.find_by_id(@band_id) if @band_id
     end
 
     def self.update( options )
