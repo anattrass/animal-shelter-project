@@ -36,6 +36,27 @@ h1 {
   justify-content: center;
 }
 
+.button {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 13px;
+    background: #2656d1;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #d2c0fa;
+    background-image: -webkit-linear-gradient(top, #d2c0fa, #9bcefa);
+    background-image: -moz-linear-gradient(top, #d2c0fa, #9bcefa);
+    background-image: -ms-linear-gradient(top, #d2c0fa, #9bcefa);
+    background-image: -o-linear-gradient(top, #d2c0fa, #9bcefa);
+    background-image: linear-gradient(to bottom, #d2c0fa, #9bcefa);
+    text-decoration: none;
+  }
 
 
 
