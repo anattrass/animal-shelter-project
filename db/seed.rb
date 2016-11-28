@@ -26,15 +26,13 @@ musician1 = Musician.new({
 musician2 = Musician.new({
     'name' => 'M Shadows',
     'instrument' => 'Vox',
-    'days_here' => 46,
-    'band_id' => band2.id()
+    'days_here' => 46
     })
 
 musician3 = Musician.new({
     'name' => 'Slash',
     'instrument' => 'Guitar',
-    'days_here' => 31,
-    'band_id' => band2.id()
+    'days_here' => 31
     })
 
 
