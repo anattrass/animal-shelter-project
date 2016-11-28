@@ -30,4 +30,9 @@ class Band
        return result
    end
 
+   def self.delete( id )
+     sql = "DELETE FROM bands WHERE id=#{id};"
+     SqlRunner.run( sql )
+   end
+
 end
