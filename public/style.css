@@ -1,24 +1,36 @@
-nav {
-  padding: 0px;
-  margin: 0px;
-  padding-right: 25px;
+form label {
+    display: block;
 }
 
-nav ul li {
-  margin-bottom: 15px;
-  text-transform: uppercase;
+form label span {
+    display: inline-block;
+    width: 20%;
+}
+
+form label input {
+    width: 40%;
 }
 
 nav ul {
     list-style-type: none; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-around;
+    width: 60%;
+}
+
+
+.content {
+    display: inline-block;
+    width: 60%;
+    height: auto;
 }
 
 body {
-  background-color: #DCDCDC;
+  background-image: url(http://teezeria.com/images/designs/7200-7201img_47.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F0FFFF;
 }
 
 h1 {
@@ -28,21 +40,6 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
-p {
-  display: flex;
-  justify-content: center;
-}
-
-#content {
-  border-right: 1px solid darkred;
-  padding-left: 25px;
-
-.content {
-      display: inline-block;
-      width: 60%;
-      height: auto;
-  }
 
 
 
