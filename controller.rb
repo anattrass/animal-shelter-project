@@ -51,3 +51,13 @@ get '/bands' do
     @bands = Band.all()
     erb(:bands)
 end
+
+get '/bands/new' do
+    erb(:new_band)
+end
+
+post '/bands' do
+    band = Band.new( params )
+    band.save()
+    redirect to '/bands'
+end
