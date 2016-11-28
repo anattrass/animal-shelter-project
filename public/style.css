@@ -23,6 +23,7 @@ body {
   background-image: url(http://teezeria.com/images/designs/7200-7201img_47.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 600px;
   background-attachment: fixed;
   background-color: #F0FFFF;
   font-family: Consolas, monaco, monospace;
