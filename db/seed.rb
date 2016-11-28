@@ -20,13 +20,15 @@ band3.save()
 musician1 = Musician.new({
     'name' => 'Corey Taylor',
     'instrument' => 'Vox',
-    'days_here' => 37
+    'days_here' => 37,
+    'band_id' => band2.id()
     })
 
 musician2 = Musician.new({
     'name' => 'M Shadows',
     'instrument' => 'Vox',
-    'days_here' => 46
+    'days_here' => 46,
+    'band_id' => band2.id()
     })
 
 musician3 = Musician.new({

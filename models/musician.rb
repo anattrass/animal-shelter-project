@@ -1,8 +1,9 @@
 require_relative('../db/sqlrunner')
 require_relative('band')
+require('pry-byebug')
 
 class Musician 
-    attr_reader :name, :instrument, :days_here, :id
+    attr_reader :name, :instrument, :days_here, :id, :band_id
 
     def initialize( options )
         @name = options['name']
@@ -30,6 +31,13 @@ class Musician
     def band()
         return Band.find_by_id(@band_id)
     end
+
+    def self.update( options )
+        sql = "Update musicians SET name='#{ options['name'] }', instrument='#{ options['instrument'] }', days_here=#{ options['days_here'] }, band_id=#{ options['band_id']}
+        WHERE id='#{ options['id'] }'"
+        SqlRunner.run( sql )
+    end
+
 
     def self.all()
         sql = "SELECT * FROM musicians;"

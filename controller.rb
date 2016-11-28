@@ -18,11 +18,18 @@ post '/musicians' do
     redirect to '/musicians'
 end
 
-post '/musicians/:id/collection' do
+#get student info
+get '/musicians/:id/collection' do
     @musician = Musician.find_by_id(params['id'].to_i)
     @bands = Band.all()
     erb(:collection)
 end
+
+post '/musicians/:id' do
+    Musician.update( params )
+    redirect to '/musicians'
+end
+
 
 post '/musicians/:id/delete' do
   Musician.delete( params[:id] )
