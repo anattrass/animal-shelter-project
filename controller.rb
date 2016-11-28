@@ -61,3 +61,8 @@ post '/bands' do
     band.save()
     redirect to '/bands'
 end
+
+post '/bands/:id/delete' do
+  Band.delete( params[:id] )
+  redirect to '/bands'
+end
