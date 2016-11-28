@@ -2,15 +2,12 @@
 
 <form action="/musicians/<%= @musician.id %>" method="post">
     <label>
-        Musician:
         <input type="hidden" name="name" value="<%= @musician.name %>"/> 
     </label>
     <label>
-        Instrument:
         <input type="hidden" name="instrument" value="<%= @musician.instrument %>"/>
     </label>
     <label>
-        Days Here:
         <input type="hidden" name="days_here" value="<%= @musician.days_here %>"/>
     </label>
     <label>
