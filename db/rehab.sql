@@ -12,5 +12,5 @@ CREATE TABLE musicians (
     name VARCHAR(255),
     instrument VARCHAR(255),
     days_here INT4,
-    band_id INT8 references bands(id)
+    band_id INT8 references bands(id) ON DELETE CASCADE
 );
