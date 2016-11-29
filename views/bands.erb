@@ -1,9 +1,19 @@
-<h1>Bands that are ready to collect their musician</h1>
+<h1>Bands Here to Collect A Musician</h1>
+
+<table>
+
+  <tr>
+    <th>Name</th>
+    <th>Members from Rehab</th>
+  </tr>
 
 <% for band in @bands %>
-    <p>Name: <%= band.name() %> </p>
-    <a href="/musicians/band/<%= band.id %>">Show musicians</a>
-    <hr>
+  <tr>
+    <td>Name: <%= band.name() %></td>
+    <td><a class="button" href="/musicians/band/<%= band.id %>">Show</a></td>
+  </tr>
 <% end %>
+
+</table>
 
 <p><a href='/bands/new'>Add a Band</a></p>
