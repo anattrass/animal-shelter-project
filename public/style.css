@@ -112,6 +112,19 @@ form label input {
     font-family: Consolas, monaco, monospace;
   }
 
+  form label {
+      display: block;
+  }
+
+  form label span {
+      display: inline-block;
+      width: 10%;
+  }
+
+  form label input {
+      width: 30%;
+  }
+
 
 
 
