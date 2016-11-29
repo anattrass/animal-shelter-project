@@ -1,9 +1,23 @@
 <h1>All Musicians</h1>
 
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Instrument</th>
+    <th>Days Spent in Rehab</th>
+    <th>Display Info</th>
+</tr>
+
 <% for musician in @musicians %>
-    <p>Name: <%= musician.name() %> </p>
-    <p>Instrument: <%= musician.instrument %></p>
-    <p>Days Spent in Rehab: <%= musician.days_here %></p>
-    <p><a class="button" href='/musicians/<%= musician.id %>'>Show</a></p>
-    <hr>
+  <tr>
+    <td><%= musician.name() %> </td>
+    <td><%= musician.instrument %></td>
+    <td><%= musician.days_here %></td>
+    <td><a class="button" href='/musicians/<%= musician.id %>'>Show</a></td>
+  </tr>
 <% end %>
+
+</table>
+
+
