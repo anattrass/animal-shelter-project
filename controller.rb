@@ -18,7 +18,6 @@ post '/musicians' do
     redirect to '/musicians'
 end
 
-#get student info
 get '/musicians/:id/collection' do
     @musician = Musician.find_by_id(params['id'].to_i)
     @bands = Band.all()
