@@ -11,13 +11,66 @@ form label input {
     width: 40%;
 }
 
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 38px;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 41.8px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+/*.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}*/
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 170px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+/*
 nav ul {
     list-style-type: none; 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 60%;
+    align-items: center;
+    text-decoration: none;
+    background-color: red;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+*/
 
 body {
   background-image: url(http://teezeria.com/images/designs/7200-7201img_47.png);
