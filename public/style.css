@@ -43,7 +43,6 @@ form label input {
   background-color: #B0E0E6;
 }
 
-@media screen and (min-width: 600px) {
   .nav li {
     width: 170px;
     border-bottom: none;
