@@ -29,7 +29,6 @@ post '/musicians/:id' do
     redirect to '/musicians'
 end
 
-
 post '/musicians/:id/delete' do
   Musician.delete( params[:id] )
   redirect to '/musicians'
