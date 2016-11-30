@@ -2,18 +2,18 @@ require_relative('../models/musician.rb')
 require_relative('../models/band.rb')
 
 band1 = Band.new({
-    'name' => 'Slipknot'
+    'name' => 'Slipknot',
     'logo_url' => 'http://logosvector.net/wp-content/uploads/2012/10/slipknot-vector-logo.png'
     })
 
 band2 = Band.new({
-    'name' => 'Guns N Roses'
+    'name' => 'Guns N Roses',
     'logo_url' => 'http://cdn.gunsnroses.com/site/chamber-logo.png'
     })
 
 band3 = Band.new({
-    'name' => 'Avenged Sevenfold'
-    'logo_url' => 'http://www.clker.com/cliparts/0/e/8/9/13522021041395002114avenged-sevenfold-logo-hi.png'
+    'name' => 'Avenged Sevenfold',
+    'logo_url' => 'http://allaboutwindowsphone.com/images/appicons/129817.png'
     })
 
 band1.save()
