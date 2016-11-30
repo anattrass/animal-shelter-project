@@ -1,17 +1,13 @@
 <h1>Bands Here to Collect A Musician</h1>
 
-<table>
-
-  <tr>
-    <th>Click for visiting members</th>
-  </tr>
-
+<ul class="frame">
+  
   <% for band in @bands %>
-  <tr>
-    <td><a href="/musicians/band/<%= band.id %>"><img src="<%= band.logo_url() %>"></a></td>
-  </tr>
+  
+    <a href="/musicians/band/<%= band.id %>"><img src="<%= band.logo_url() %>"></a>
+  
   <% end %>
 
-</table>
+</ul>
 
 <p><a class="button" href='/bands/new'>Add a Band</a></p>
