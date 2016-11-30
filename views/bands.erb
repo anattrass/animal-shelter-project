@@ -3,12 +3,12 @@
 <table>
 
   <tr>
-    <th>Band Memebers that have been to HND Rehab</th>
+    <th>Click for visiting members</th>
   </tr>
 
 <% for band in @bands %>
   <tr>
-    <td><a class="button" href="/musicians/band/<%= band.id %>"><img src="<%= band.logo_url() %>"></a></td>
+    <td><a href="/musicians/band/<%= band.id %>"><img src="<%= band.logo_url() %>"></a></td>
   </tr>
 <% end %>
 

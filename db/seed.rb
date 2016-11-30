@@ -3,12 +3,12 @@ require_relative('../models/band.rb')
 
 band1 = Band.new({
     'name' => 'Slipknot',
-    'logo_url' => 'http://logosvector.net/wp-content/uploads/2012/10/slipknot-vector-logo.png'
+    'logo_url' => 'http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=28801569'
     })
 
 band2 = Band.new({
     'name' => 'Guns N Roses',
-    'logo_url' => 'http://cdn.gunsnroses.com/site/chamber-logo.png'
+    'logo_url' => 'http://images.sk-static.com/images/media/profile_images/artists/509644/huge_avatar'
     })
 
 band3 = Band.new({
