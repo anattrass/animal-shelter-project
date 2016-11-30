@@ -4,12 +4,14 @@
 
   <tr>
     <th>Name</th>
+    <th>Logo</th>
     <th>Members from Rehab</th>
   </tr>
 
 <% for band in @bands %>
   <tr>
     <td>Name: <%= band.name() %></td>
+    <td>Logo: <%= band.logo_url() %></td>
     <td><a class="button" href="/musicians/band/<%= band.id %>">Show</a></td>
   </tr>
 <% end %>
