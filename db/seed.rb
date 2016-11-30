@@ -38,7 +38,6 @@ musician3 = Musician.new({
     'days_here' => 31
     })
 
-
 musician1.save()
 musician2.save()
 musician3.save()

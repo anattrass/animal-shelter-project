@@ -8,23 +8,23 @@
 <% unless @musician.band_id %>
 
 <% if @musician.can_be_collected? %>
-  <li>
-    Ready for Collection:
-  </li>
-  <li>
-      <form action="/musicians/<%= @musician.id %>/collection" method="get">
-          <input type="submit" value="Collect" />
-      </form>
-  </li> 
+<p>
+  <span>Ready for Collection!</span>
+</p>
+<p>
+  <form action="/musicians/<%= @musician.id %>/collection" method="get">
+    <input type="submit" value="Collect" />
+  </form>
+</p> 
 
-  <% else %>
-  <li>
-     Not fully cleansed!
-  </li>
-  <% end %>
+<% else %>
+<p>
+ <span>Not fully cleansed!</span>
+</p>
+<% end %>
 
-  <% end %>
+<% end %>
 
 <form action="/musicians/<%= @musician.id %>/delete" method="post">
-    <input type="submit" value="Delete" />
+  <input type="submit" value="Delete" />
 </form>

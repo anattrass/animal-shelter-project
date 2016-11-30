@@ -14,11 +14,11 @@ class Musician
     end
 
     def save()
-            band_id = "Null"
-            band_id = "#{@band_id}" if @band_id
+        band_id = "Null"
+        band_id = "#{@band_id}" if @band_id
 
-            days_here = 0
-            days_here = "'#{@days_here}'" if @days_here
+        days_here = 0
+        days_here = "'#{@days_here}'" if @days_here
         sql = "INSERT INTO musicians
         (name, instrument, days_here, band_id)
         VALUES
@@ -29,12 +29,12 @@ class Musician
     end
 
     def can_be_collected?
-          earliest_collection = 30
-          return @days_here >= earliest_collection
-      end
+      earliest_collection = 30
+      return @days_here >= earliest_collection
+  end
 
     def band()
-        return Band.find_by_id(@band_id) if @band_id
+    return Band.find_by_id(@band_id) if @band_id
     end
 
     def self.update( options )

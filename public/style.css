@@ -43,95 +43,93 @@ form label input {
   background-color: #B0E0E6;
 }
 
-  .nav li {
-    width: 170px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
+.nav li {
+  width: 170px;
+  border-bottom: none;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+}
 
-  body {
-    background-image: url(http://teezeria.com/images/designs/7200-7201img_47.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 600px;
-    background-attachment: fixed;
-    background-color: #F0FFFF;
-    font-family: Consolas, monaco, monospace;
-  }
+body {
+  background-image: url(http://teezeria.com/images/designs/7200-7201img_47.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  background-attachment: fixed;
+  background-color: #F0FFFF;
+  font-family: Consolas, monaco, monospace;
+}
 
-  h1 {
-    font-size: 1.8em;
-    color: #1E90FF;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
+h1 {
+  font-size: 1.8em;
+  color: #1E90FF;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  .button {
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: Georgia;
-    color: #000000;
-    font-size: 13px;
-    background: #2656d1;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
+.button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 13px;
+  background: #2656d1;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
-  .button:hover {
-    background: #d2c0fa;
-    background-image: -webkit-linear-gradient(top, #d2c0fa, #9bcefa);
-    background-image: -moz-linear-gradient(top, #d2c0fa, #9bcefa);
-    background-image: -ms-linear-gradient(top, #d2c0fa, #9bcefa);
-    background-image: -o-linear-gradient(top, #d2c0fa, #9bcefa);
-    background-image: linear-gradient(to bottom, #d2c0fa, #9bcefa);
-    text-decoration: none;
-  }
+.button:hover {
+  background: #d2c0fa;
+  background-image: -webkit-linear-gradient(top, #d2c0fa, #9bcefa);
+  background-image: -moz-linear-gradient(top, #d2c0fa, #9bcefa);
+  background-image: -ms-linear-gradient(top, #d2c0fa, #9bcefa);
+  background-image: -o-linear-gradient(top, #d2c0fa, #9bcefa);
+  background-image: linear-gradient(to bottom, #d2c0fa, #9bcefa);
+  text-decoration: none;
+}
 
-  .footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: purple;
-    font-family: Papyrus, fantasy;
-    font-size: 30px;
-    font-style: normal;
-    font-variant: small-caps;
-    font-weight: 100;
-    padding: 0;
-    margin: -10;
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: purple;
+  font-family: Papyrus, fantasy;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 100;
+  padding: 0;
+  margin: -10;
 
-  }
+}
 
-  .tagline {
-    color: #1E90FF;
-    font-family: Consolas, monaco, monospace;
-  }
+.tagline {
+  color: #1E90FF;
+  font-family: Consolas, monaco, monospace;
+}
 
-  form label {
-      display: block;
-  }
+form label {
+  display: block;
+}
 
-  form label span {
-      display: inline-block;
-      width: 10%;
-  }
+form label span {
+  display: inline-block;
+  width: 10%;
+}
 
-  form label input {
-      width: 30%;
-  }
+form label input {
+  width: 30%;
+}
 
 table {
   width: 100%;
 }
 
 th, td {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
-
-
 

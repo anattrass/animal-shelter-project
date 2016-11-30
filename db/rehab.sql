@@ -1,7 +1,6 @@
 DROP TABLE musicians;
 DROP TABLE bands;
 
-
 CREATE TABLE bands (
     id SERIAL8 primary key,
     name VARCHAR(255),

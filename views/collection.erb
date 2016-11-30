@@ -13,9 +13,9 @@
     <label>
         <span>Collecting Band:</span>
         <select name = "band_id">
-        <option disabled selected>select..</option>
+            <option disabled selected>select..</option>
             <% for band in @bands %>
-                <option  value="<%= band.id %>"><%= band.name %></option> 
+            <option  value="<%= band.id %>"><%= band.name %></option> 
             <% end %>
         </select>
     </label>

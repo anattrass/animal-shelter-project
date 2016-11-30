@@ -6,11 +6,11 @@
     <th>Click for visiting members</th>
   </tr>
 
-<% for band in @bands %>
+  <% for band in @bands %>
   <tr>
     <td><a href="/musicians/band/<%= band.id %>"><img src="<%= band.logo_url() %>"></a></td>
   </tr>
-<% end %>
+  <% end %>
 
 </table>
 

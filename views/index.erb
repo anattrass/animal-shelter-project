@@ -6,16 +6,16 @@
     <th>Instrument</th>
     <th>Days Spent in Rehab</th>
     <th>Display Info</th>
-</tr>
+  </tr>
 
-<% for musician in @musicians %>
+  <% for musician in @musicians %>
   <tr>
     <td><%= musician.name() %> </td>
     <td><%= musician.instrument %></td>
     <td><%= musician.days_here %></td>
     <td><a class="button" href='/musicians/<%= musician.id %>'>Show</a></td>
   </tr>
-<% end %>
+  <% end %>
 
 </table>
 
