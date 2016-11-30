@@ -148,6 +148,7 @@ h3 {
   justify-content: space-around;
   padding-top: 10%;
   padding-bottom: 10%;
+  font-variant: small-caps;
 }
 
 h4 {
@@ -156,6 +157,7 @@ h4 {
   padding-bottom: 5%;
   font-size: 3em;
   color: #1E90FF;
+  font-variant: small-caps;
 }
 
 .frame img {
