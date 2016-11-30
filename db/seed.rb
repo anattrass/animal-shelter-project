@@ -8,7 +8,7 @@ band1 = Band.new({
 
 band2 = Band.new({
     'name' => 'Guns N Roses'
-    'logo_url' => 
+    'logo_url' => 'http://cdn.gunsnroses.com/site/chamber-logo.png'
     })
 
 band3 = Band.new({
