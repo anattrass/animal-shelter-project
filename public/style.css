@@ -67,6 +67,7 @@ h1 {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  font-variant: small-caps;
 }
 
 .button {
@@ -95,8 +96,8 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: purple;
-  font-family: Papyrus, fantasy;
+  color: #9370DB;
+  font-family: cursive;
   font-size: 30px;
   font-style: normal;
   font-variant: small-caps;
@@ -131,5 +132,11 @@ table {
 th, td {
   padding: 15px;
   text-align: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
 }
 

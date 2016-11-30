@@ -3,6 +3,10 @@ require('sinatra/contrib/all')
 require('pry-byebug')
 require_relative('models/musician')
 
+get '/' do
+    erb(:home)
+end
+
 get '/musicians' do
     @musicians = Musician.all()
     erb(:index)
