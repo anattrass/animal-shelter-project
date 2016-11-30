@@ -2,16 +2,17 @@ require_relative('../db/sqlrunner')
 
 class Band
 
-    attr_reader :name, :id
+    attr_reader :name, :id, :logo_url
 
     def initialize( options )
         @name = options['name']
         @id = options['id'].to_i if options['id']
+        @logo_url = options['logo_url']
     end
 
     def save()
-       sql = "INSERT INTO bands (name) 
-       VALUES ('#{@name}') RETURNING *;"
+       sql = "INSERT INTO bands (name, logo_url) 
+       VALUES ('#{@name}', '#{@logo_url}') RETURNING *;"
        result = SqlRunner.run(sql)
        @id = result.first()['id'].to_i
    end

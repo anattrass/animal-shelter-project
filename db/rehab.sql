@@ -4,7 +4,8 @@ DROP TABLE bands;
 
 CREATE TABLE bands (
     id SERIAL8 primary key,
-    name VARCHAR(255)
+    name VARCHAR(255),
+    logo_url VARCHAR(255)
 );
 
 CREATE TABLE musicians (
